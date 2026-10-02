@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>The Grand Restaurant</title>
+
+
+<!-- Bootstrap CSS -->
+
+<link
+
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+
+rel="stylesheet"
+
+>
+
+
+<style>
+
+body {
+
+background-image: url('https://cdn.discordapp.com/attachments/999934962453196930/1555529535947149372/latest.png?backend=b2&ex=6ac0db45&is=6abf89c5&hm=c224dbebcf792731639fd8d37a3c7fc2ac5002f3fcc2eb4911292e9c2a297e76');
+
+min-height: 100vh;
+
+font-family: Arial, sans-serif;
+
+}
+
+
+.container {
+
+padding-top: 50px;
+
+padding-bottom: 50px;
+
+}
+
+
+.main-card {
+
+border: none;
+
+border-radius: 20px;
+
+overflow: hidden;
+
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.header {
+
+background: #3d2f27;
+
+color: white;
+
+padding: 30px;
+
+text-align: center;
+
+}
+
+
+.info-card {
+
+border: none;
+
+border-radius: 15px;
+
+height: 100%;
+
+transition: transform 0.2s;
+
+}
+
+
+
+footer {
+
+text-align: center;
+
+color: white;
+
+margin-top: 30px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-sm ">
+<div class="container-fluid">
+<a class="navbar-brand" href="#"> <img src="https://cdn.discordapp.com/attachments/999934962453196930/1555583582830076025/latest.png?backend=b2&ex=6ac10d9b&is=6abfbc1b&hm=5d1d046d09ae34b4f4a3353e3b1c1e0a71cc67d325e72af5afc70f0bf86d83c0" width="50">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+<spam class="navbar-toggler-icon"></spam>
+</button>
+
+<div class="collapse navbar-collapse" id="mynavbar">
+   <ul class="navbar-nav me-auto">
+    <li class="nav-item"> 
+        <a class="nav-link" href="index.html"> Receipt generator ✦︎</a>
+    </li>
+
+     <li class="nav-item"> 
+        <a class="nav-link" href="sku.html"> SKU generator  </a>
+    </li> 
+   </ul>
+
+<form class="d-flex"> 
+ <input class="form-control me-2" type="text" placeholder=". . . .">
+ <button class="btn " style="background-color: #f8db5c;" type="button"> SEARCH </button>
+</form>
+</div>
+
+</div>
+
+    </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="container">
+
+
+<div class="card main-card">
+
+    
+
+<div class="header">
+
+    
+<img src="https://cdn.discordapp.com/attachments/999934962453196930/1555531921042309141/latest.png?backend=b2&ex=6ac0dd7e&is=6abf8bfe&hm=bc8f53cf381adcb5b50ae0b2e1a191dbbf7e0bc0605707c67020a477d5b25975" width="100">
+
+<h1>SKU Generator    </h1>
+
+<p class="mb-0"> ⟡ 33,550,336 customers around the world rates this a "Yeah!"</p>
+
+</div>
+
+
+<div class="card-body p-4">
+
+    
+    <div class="body">
+     <!DOCTYPE html>
+<html>
+<body>
+
+  <h1>SKU Generator</h1>
+
+  Category:
+  <select id="category">
+    <option>Perishables</option>
+    <option>Non-Perishables</option>
+    <option>Beverages</option>
+  </select>
+  <br><br>
+
+    <h5> Product Name: </h5>
+ <form class="d-flex"> 
+    <input class="form-control me-2" id="product" placeholder=" Sweet Burger ">
+    </form>
+<br>
+  <h5> Stock Quantity: </h5>
+ <form class="d-flex"> 
+    <input class="form-control me-2" id="quantity" placeholder=" e.g. 50 ">
+    </form>
+    <br>
+  <button onclick="generate()">Generate SKU</button>
+
+  <p id="result">Your generated SKU will appear here.  ˙ᵕ˙ </p>
+
+  <script>
+    function generate() {
+      var c = document.getElementById("category").value;
+      var p = document.getElementById("product").value;
+      var q = document.getElementById("quantity").value;
+
+      var sku = c.substring(0, 3) + "-" + p.substring(0, 3) + "-" + q;
+      document.getElementById("result").innerHTML = sku.toUpperCase();
+    }
+  </script>
+
+</body>
+
+</html>
